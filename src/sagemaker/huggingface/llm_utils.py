@@ -49,6 +49,7 @@ def get_huggingface_llm_image_uri(
             region=region,
             version=version,
             image_scope="inference",
+            sagemaker_session=session
         )
     if backend == "lmi":
         version = version or "0.24.0"
